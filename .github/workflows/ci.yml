@@ -1,3 +1,4 @@
+
 name: DriftSense ML API - CI Pipeline
 
 on:
@@ -14,7 +15,6 @@ permissions:
 
 jobs:
 
-  # JOB-1: Test
   test:
     name: Run API Tests
     runs-on: ubuntu-latest
@@ -36,7 +36,6 @@ jobs:
       - name: Run automated tests
         run: python -m pytest -v
 
-  # JOB-2: Build and Publish to Amazon ECR
   build-and-push:
     name: Build and Publish to Amazon ECR
     needs: test
