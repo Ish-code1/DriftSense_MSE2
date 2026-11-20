@@ -1,0 +1,14 @@
+{
+  "batch": 3,
+  "rows": 1586,
+  "features": 128,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "target_distribution": {
+    "0": 365,
+    "1": 490,
+    "2": 216,
+    "3": 240,
+    "4": 275
+  }
+}

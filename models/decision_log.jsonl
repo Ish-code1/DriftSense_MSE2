@@ -1,0 +1,3 @@
+{"time": "2026-11-20T09:47:40.481369", "metric": "macro_f1", "champion_f1": 0.5001854786870763, "candidate_f1": 0.8300034555335657, "old_test_accuracy_drop": -0.011235955056179803, "decision": "PROMOTE_ELIGIBLE"}
+{"time": "2026-11-20T09:48:33.449968", "metric": "macro_f1", "champion_f1": 0.5001854786870763, "candidate_f1": 0.8300034555335657, "old_test_accuracy_drop": -0.011235955056179803, "decision": "PROMOTE_ELIGIBLE"}
+{"time": "2026-11-20T09:50:09.103583", "metric": "macro_f1", "champion_f1": 0.5001854786870763, "candidate_f1": 0.8300034555335657, "old_test_accuracy_drop": -0.011235955056179803, "decision": "PROMOTE_ELIGIBLE"}
