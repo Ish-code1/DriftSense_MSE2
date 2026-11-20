@@ -1,6 +1,7 @@
 import numpy as np
 from fastapi.testclient import TestClient
-from main import create_app, N_FEATURES
+
+from main import N_FEATURES, create_app
 
 
 class DummyModel:

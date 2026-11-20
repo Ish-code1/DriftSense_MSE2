@@ -1,8 +1,10 @@
 import json
-import joblib
 from pathlib import Path
+
+import joblib
 import mlflow
 import mlflow.sklearn
+
 # Client API lets us manage registered models and their aliases
 from mlflow import MlflowClient
 

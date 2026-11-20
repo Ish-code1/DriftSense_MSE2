@@ -1,13 +1,13 @@
-from fastapi import FastAPI, Request, HTTPException
-from pydantic import BaseModel, Field
+import json
+import os
+from collections.abc import Callable
+from contextlib import asynccontextmanager
+
 import mlflow
 import mlflow.sklearn
 import numpy as np
-import json
-import os
-from contextlib import asynccontextmanager
-from typing import Callable
-
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel, Field
 
 MLFLOW_TRACKING_URI = os.getenv(
     "MLFLOW_TRACKING_URI", "http://127.0.0.1:7001"

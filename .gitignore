@@ -6,3 +6,6 @@ mlflow.db
 mlartifacts/
 mlruns/
 *.pem
+.venv/
+.coverage
+*.egg-info/
