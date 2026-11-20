@@ -1,6 +1,8 @@
 # Usage: python task_a_validate.py 3
 import json
+
 import numpy as np
+
 from common import *
 
 X, y = load_batch(BATCH, clean=False)
@@ -15,5 +17,6 @@ report = {
     "target_distribution": dict(zip(labels.tolist(), counts.tolist())),
 }
 
-json.dump(report, open("reports/data_validation.json", "w"), indent=2)
+with open("reports/data_validation.json", "w") as f:
+    json.dump(report, f, indent=2)
 print(report)
