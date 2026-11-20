@@ -21,4 +21,4 @@ mlflow.set_experiment("driftsense-retraining")
 with mlflow.start_run(run_name=f"candidate_batch{BATCH}"):
     mlflow.log_params({"n_estimators": 100, "train_batches": f"1+{BATCH}", "train_rows": len(X_all)})
     mlflow.log_metrics({f"holdout_{k}": v for k, v in scores(candidate, X_new_ho, y_new_ho).items()})
-    mlflow.sklearn.log_model(candidate, "model")
+    mlflow.sklearn.log_model(candidate, "model", skops_trusted_types=["sklearn.tree._tree.Tree"])
